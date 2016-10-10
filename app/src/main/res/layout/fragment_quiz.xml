@@ -24,12 +24,25 @@
         android:layout_height="wrap_content"
         android:id="@+id/flagImageView" />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/guess"
-        android:id="@+id/guessCountryTextView"
-        android:layout_gravity="center" />
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/guess"
+            android:id="@+id/guessTextView"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/contentTextView" />
+    </LinearLayout>
 
     <LinearLayout
         android:orientation="horizontal"
